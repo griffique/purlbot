@@ -4,6 +4,15 @@
   background-color: #f7f5f2;
   font-family: "Share Tech Mono";
 }
+a:link {
+  color: #279af1;
+}
+a:hover {
+  color: #4cc9f0;
+}
+a:visited {
+  color: #f72585;
+}
 
 /*Title and Navigation*/
 .title,
@@ -21,14 +30,17 @@
 }
 #purl-title {
   font-family: "Pacifico";
+  color: #3a0ca3;
 }
 #bot-title {
   font-family: "Share Tech Mono";
   font-weight: bold;
+  color: #7209b7;
 }
 
-/*About Purlbot*/
-.about-purlbot {
+/*Cards*/
+.card {
   margin: 0 auto;
   background-color: #f7f5f2;
+  padding: 0;
 }
