@@ -1,4 +1,34 @@
+/*Pagewide Features*/
 .page-body {
   background-image: url("file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/knit.jpg");
+  background-color: #f7f5f2;
+  font-family: "Share Tech Mono";
+}
+
+/*Title and Navigation*/
+.title,
+.subtitle {
+  text-align: center;
+}
+#navigation-menu {
+  text-align: center;
+}
+#navigation-menu li {
+  display: inline;
+  padding: none;
+  margin: 0 50px 0 0;
+  list-style: none;
+}
+#purl-title {
+  font-family: "Pacifico";
+}
+#bot-title {
+  font-family: "Share Tech Mono";
+  font-weight: bold;
+}
+
+/*About Purlbot*/
+.about-purlbot {
+  margin: 0 auto;
   background-color: #f7f5f2;
 }

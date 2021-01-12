@@ -4,83 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PurlBot</title>
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-  <body class="page-body">
-    <h1>🧶PurlBot</h1>
-    <h2>Let PurlBot generate a basic pattern customized to you.</h2>
-    <p>
-      Have you ever found a stash of yarn left over from another project and
-      thought, "what can I make with this?" You probably then browse through
-      countless patterns trying to find something that works with your materials
-      and gauge. That's where <strong> PurlBot </strong> is different. You tell
-      PurlBot a little bit about your project and we'll generate a basic pattern
-      for you. Then you can customize with whatever cables, bobbles, or special
-      stitches you want--just make sure to take this into account when you make
-      your swatch (see below).
-    </p>
-    <h3>Preparing to Use PurlBot</h3>
-    <ol>
-      <li>
-        Choose your yarn and determine approximately how many yards you have.
-      </li>
-      <li>Check the yarn label for suggested needle size.</li>
-      <li>
-        Using the yarn and needles you've chosen, knit a gauge swatch of at
-        least 4" x 4" in the stitch you intend to use for your project.*
-      </li>
-      <li>
-        Determine the number of stitches you knit in one inch, both horizontally
-        and vertically. This is your gauge.
-      </li>
-      <li>
-        Use PurlBot to see what you can make and generate a custom pattern!
-      </li>
-    </ol>
-    <p>
-      *This is important because the stitch may change your gauge. A cable
-      pattern, for example, will make it tighter, while a lace pattern often
-      makes it looser. For more on gauge, see
-      <a
-        href="https://www.purlsoho.com/create/2020/08/20/all-about-gauge/"
-        target="_blank"
-      >
-        this post by Purl Soho.
-      </a>
-    </p>
-    <h1>Generate Your Pattern</h1>
-    <ul>
-      <li>What do you want to knit?</li>
-      <li>Approximately how many yards of yarn do you have?</li>
-      <li>
-        On your gauge swatch, how many stitches do you count
-        <strong> horizontally </strong> in one inch?
-      </li>
-      <li>
-        On your gauge swatch, how many stitches do you count
-        <strong> vertically </strong> in one inch?
-      </li>
-    </ul>
 
-    <footer id="coded-by">
-      <a
-        href="https://github.com/griffique/griffin-she-codes-plus"
-        target="_blank"
-      >
-        Open Source Code</a
-      >
-      by
-      <a
-        href="https://www.linkedin.com/in/quinn-griffin-9955711b8/"
-        target="_blank"
-        >Quinn Griffin</a
-      >
-      🐱‍🚀 <br />
-      <span id="updates"> Last Updated Jan 11, 2021 </span>
-      <br />
-      Have you made something with PurlBot?
-      <a href="mailto:purlbot@protonmail.com"> Contact me </a> with photos of
-      your project or suggestions!
-    </footer>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page-body">
+    <div class="container">
+      <h1 class="title">
+        🧶<span id="purl-title">Purl</span><span id="bot-title">Bot</span>
+      </h1>
+      <h2 class="subtitle">
+        Generate basic knitting patterns that are customized to you.
+      </h2>
+      <ul id="navigation-menu">
+        <li>How to Use</li>
+        <li>PurlBot Generator</li>
+        <li>About PurlBot</li>
+      </ul>
+      <div class="card about-purlbot" style="width: 36rem">
+        <img
+          src="file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/aboutpurlbotimage.png"
+          class="card-img-top"
+          alt="knitting supplies"
+        />
+        <div class="card-body">
+          <h5 class="card-title" id="about-purlbot-text">
+            About <span id="purl-title">Purl</span
+            ><span id="bot-title">Bot</span>
+          </h5>
+          <p class="card-text">
+            Have you ever found a stash of yarn left over from another project
+            and thought, "what can I make with this?" You probably then browse
+            through countless patterns trying to find something that works with
+            your materials and gauge. That's where <strong> PurlBot </strong> is
+            different. You tell PurlBot a little bit about your project and
+            we'll generate a basic pattern for you. Then you can customize with
+            whatever cables, bobbles, or special stitches you want--just make
+            sure to take this into account when you make your swatch (see
+            below).
+          </p>
+        </div>
+      </div>
+
+      <h3>Preparing to Use PurlBot</h3>
+      <ol>
+        <li>
+          Choose your yarn and determine approximately how many yards you have.
+        </li>
+        <li>Check the yarn label for suggested needle size.</li>
+        <li>
+          Using the yarn and needles you've chosen, knit a gauge swatch of at
+          least 4" x 4" in the stitch you intend to use for your project.*
+        </li>
+        <li>
+          Determine the number of stitches you knit in one inch, both
+          horizontally and vertically. This is your gauge.
+        </li>
+        <li>
+          Use PurlBot to see what you can make and generate a custom pattern!
+        </li>
+      </ol>
+      <p>
+        *This is important because the stitch may change your gauge. A cable
+        pattern, for example, will make it tighter, while a lace pattern often
+        makes it looser. For more on gauge, see
+        <a
+          href="https://www.purlsoho.com/create/2020/08/20/all-about-gauge/"
+          target="_blank"
+        >
+          this post by Purl Soho.
+        </a>
+      </p>
+      <h1>Generate Your Pattern</h1>
+      <ul>
+        <li>What do you want to knit?</li>
+        <li>Approximately how many yards of yarn do you have?</li>
+        <li>
+          On your gauge swatch, how many stitches do you count
+          <strong> horizontally </strong> in one inch?
+        </li>
+        <li>
+          On your gauge swatch, how many stitches do you count
+          <strong> vertically </strong> in one inch?
+        </li>
+      </ul>
+
+      <footer id="coded-by">
+        <a
+          href="https://github.com/griffique/griffin-she-codes-plus"
+          target="_blank"
+        >
+          Open Source Code</a
+        >
+        by
+        <a
+          href="https://www.linkedin.com/in/quinn-griffin-9955711b8/"
+          target="_blank"
+          >Quinn Griffin</a
+        >
+        🐱‍🚀 <br />
+        <span id="updates"> Last Updated Jan 11, 2021 </span>
+        <br />
+        Have you made something with PurlBot?
+        <a href="mailto:purlbot@protonmail.com"> Contact me </a> with photos of
+        your project or suggestions!
+      </footer>
+    </div>
   </body>
 </html>
