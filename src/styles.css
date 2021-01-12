@@ -1,17 +1,18 @@
 /*Pagewide Features*/
+a:link {
+  color: #7209b7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #f72585;
+}
 .page-body {
   background-image: url("file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/knit.jpg");
   background-color: #f7f5f2;
   font-family: "Share Tech Mono";
-}
-a:link {
-  color: #279af1;
-}
-a:hover {
-  color: #4cc9f0;
-}
-a:visited {
-  color: #f72585;
 }
 
 /*Title and Navigation*/
@@ -19,14 +20,24 @@ a:visited {
 .subtitle {
   text-align: center;
 }
+.subtitle {
+  color: #3a0ca3;
+}
+.title {
+  font-size: 50px;
+  margin: 50px 0 0;
+}
 #navigation-menu {
   text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
 }
 #navigation-menu li {
   display: inline;
   padding: none;
   margin: 0 50px 0 0;
   list-style: none;
+  font-size: 20px;
 }
 #purl-title {
   font-family: "Pacifico";
@@ -43,4 +54,11 @@ a:visited {
   margin: 0 auto;
   background-color: #f7f5f2;
   padding: 0;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 50px;
 }
