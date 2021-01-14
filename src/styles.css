@@ -1,4 +1,5 @@
 /*Pagewide Features*/
+
 a:link {
   color: #7209b7;
   text-decoration: none;
@@ -8,6 +9,15 @@ a:hover {
 }
 a:visited {
   color: #f72585;
+}
+
+p,
+ol,
+ul {
+  font-size: 20px;
+}
+note {
+  font-size: 18px;
 }
 .page-body {
   background-image: url("file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/knit.jpg");
@@ -22,15 +32,23 @@ a:visited {
 }
 .subtitle {
   color: #3a0ca3;
+  font-weight: 700;
 }
 .title {
-  font-size: 50px;
-  margin: 50px 0 0;
+  font-size: 75px;
+  margin: 80px 0 20px;
+}
+#yarn-emoji {
+  width: 10%;
+  height: 10%;
 }
 #navigation-menu {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
+  padding: 15px;
+  font-size: 25px;
+  margin: 25px 0;
 }
 #navigation-menu li {
   display: inline;
@@ -61,4 +79,11 @@ footer {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   margin: 50px;
+  font-size: 20px;
+}
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3a0ca3;
 }
