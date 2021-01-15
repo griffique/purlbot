@@ -20,7 +20,7 @@ note {
   font-size: 18px;
 }
 .page-body {
-  background-image: url("file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/knit.jpg");
+  background-image: url("https://drive.google.com/uc?id=1PRR6D6IcdcHhTKgsTlSjgczAPDe3wf2r");
   background-color: #f7f5f2;
   font-family: "Share Tech Mono";
 }
@@ -82,6 +82,10 @@ note {
 #scarf-title {
   font-family: "Pacifico";
   color: #3a0ca3;
+}
+#yarn-calculator {
+  margin: 50px auto;
+  text-align: center;
 }
 
 /*Cards*/

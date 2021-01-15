@@ -10,7 +10,7 @@ function loadAboutPurlbot(event) {
   displayArea.innerHTML = `
     <div class="card about-purlbot" style="width: 42rem">
       <img
-        src="file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/aboutpurlbotimage.png"
+        src="https://drive.google.com/uc?id=1cmQAznp4h9S_K4EnyUjws1Mx2aJkm2Ga"
         class="card-img-top"
         alt="knitting supplies"
       />
@@ -41,7 +41,7 @@ function loadHowTo(event) {
   let displayArea = document.querySelector("#display-area");
   displayArea.innerHTML = `<div class="card using-purlbot" style="width: 42rem">
         <img
-          src="file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/knitconfetti.png"
+          src="https://drive.google.com/uc?id=1dKworEstqhPX1qisQAAC0Hgy4tehL_UY"
           class="card-img-top"
           alt="yarn stash"
         />
@@ -105,7 +105,7 @@ function handleSubmit(event) {
   if (project === "Scarf") {
     let displayArea = document.querySelector("#display-area");
     displayArea.innerHTML = `<div class="pattern-display"><h1 id="scarf-title">${possessiveName} Scarf Pattern</h1><h3>Sizes are given as (child,adult). </h3>  <p>Cast on (${childCastOnStiches},${adultCastOnStiches}) stitches. Knit in your chosen stitch until you measure (48, 60) inches from cast on, or desired length, and bind off in pattern. <a href="https://blog.knitpicks.com/tutorial-blocking-knits/" target="_blank">Block </a>to measurements listed below. </p>
-      <ul> <li> Children's scarf measurement = (6"x48")</li> <li> Adult scarf measurement = (8" x 60")</li></ul> <h4>Suggested Stitches</h4><ul><li><a href="http://freeknitstitches.com/pattern.php?num=106&menu=2" target="_blank">Forked Lightning ⭐ </a></li><li><a href="http://freeknitstitches.com/pattern.php?num=216&menu=1" target="_blank">Twisted Rib ⭐⭐</a></li><li><a href="http://freeknitstitches.com/pattern.php?num=290&menu=4" target="_blank">Sine Wave ⭐⭐⭐</a></li></ul> <ul id="difficulty-ratings"><li>⭐ Easier </li><li>⭐⭐ Intermediate </li><li>⭐⭐⭐ Advanced</li></ul><h5>Not sure if you have enough yarn? Calculate how much you'll need here:</h5><script language="JavaScript" type="text/javascript">function myOpen(url){window.open(url,null,"height=650,width=860,resizable=yes,scrollbars=yes,toolbar=no,menubar=no");}</script><a href="https://www.JimmyBeansWool.com/knittingCalculator" target=_blank><img border=0 width=126 height=102 src="https://www.JimmyBeansWool.com/images/knittingCalculator/knitCalcOtherSites.gif" alt="Knitting Calculator at Jimmy Beans Wool"></a></div>`;
+      <ul> <li> Children's scarf measurement = (6"x48")</li> <li> Adult scarf measurement = (8" x 60")</li></ul> <h4>Suggested Stitches</h4><ul><li><a href="http://freeknitstitches.com/pattern.php?num=106&menu=2" target="_blank">Forked Lightning ⭐ </a></li><li><a href="http://freeknitstitches.com/pattern.php?num=216&menu=1" target="_blank">Twisted Rib ⭐⭐</a></li><li><a href="http://freeknitstitches.com/pattern.php?num=290&menu=4" target="_blank">Sine Wave ⭐⭐⭐</a></li></ul> <ul id="difficulty-ratings"><li>⭐ Easier </li><li>⭐⭐ Intermediate </li><li>⭐⭐⭐ Advanced</li></ul><div id="yarn-calculator"><h5>Not sure if you have enough yarn? Calculate how much you'll need here:</h5><script language="JavaScript" type="text/javascript">function myOpen(url){window.open(url,null,"height=650,width=860,resizable=yes,scrollbars=yes,toolbar=no,menubar=no");}</script><a href="https://www.JimmyBeansWool.com/knittingCalculator" target=_blank><img border=0 width=126 height=102 src="https://www.JimmyBeansWool.com/images/knittingCalculator/knitCalcOtherSites.gif" alt="Knitting Calculator at Jimmy Beans Wool"></a></div></div>`;
   } else {
     alert("Mitten and Hat Functionality Coming Soon! Check back later.");
   }
