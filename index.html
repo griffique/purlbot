@@ -37,7 +37,7 @@
       <ul id="navigation-menu">
         <li><a href="#" id="how-to-use"> How to Use </a></li>
         <li>
-          <a href="#" id="pattern-generator">Pattern Generator</a>
+          <a href="" id="pattern-generator">Pattern Generator</a>
         </li>
         <li><a href="#" id="about-purlbot">About PurlBot</a></li>
       </ul>
@@ -55,19 +55,39 @@
             Pattern Generator
           </h5>
           <p class="card-text">
-          
+  <form class="scarfForm">        
       <ul>
-        <li>What do you want to knit?</li>
+      <li> What do you want to knit? </li>
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">Scarf</option>
+    <option value="2">Coming Soon: Hat</option>
+    <option value="3">Coming Soon: Mittens</option>
+  </select>
+</div>
         <li>Approximately how many yards of yarn do you have?</li>
         <li>
           On your gauge swatch, how many stitches do you count
           <strong> horizontally </strong> in one inch?
         </li>
-        <li>
-          On your gauge swatch, how many stitches do you count
-          <strong> vertically </strong> in one inch?
-        </li>
+        <div class="form-group">
+  
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+
       </ul>
+      <input type="Submit" class="submit">
+      </form>
           </p>
         </div>
         </div>

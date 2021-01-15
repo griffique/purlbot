@@ -55,7 +55,8 @@ note {
   padding: none;
   margin: 0 50px 0 0;
   list-style: none;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 600;
 }
 #purl-title {
   font-family: "Pacifico";

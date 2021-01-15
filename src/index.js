@@ -100,8 +100,18 @@ function loadPatternGenerator(event) {
           </h5>
           <p class="card-text">
           
-      <ul>
-        <li>What do you want to knit?</li>
+      <ul> <li> What do you want to knit? </li>
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
         <li>Approximately how many yards of yarn do you have?</li>
         <li>
           On your gauge swatch, how many stitches do you count
