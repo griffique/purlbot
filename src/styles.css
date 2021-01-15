@@ -67,6 +67,22 @@ note {
   font-weight: bold;
   color: #7209b7;
 }
+/*Pattern generator display*/
+
+.pattern-display {
+  background-color: #f7f5f2;
+  padding: 20px;
+  margin: 0 auto;
+}
+#difficulty-ratings {
+  list-style: none;
+
+  font-size: 16px;
+}
+#scarf-title {
+  font-family: "Pacifico";
+  color: #3a0ca3;
+}
 
 /*Cards*/
 .card {

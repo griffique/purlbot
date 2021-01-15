@@ -41,52 +41,53 @@
         </li>
         <li><a href="#" id="about-purlbot">About PurlBot</a></li>
       </ul>
-      
-      
+
       <div id="display-area">
- <div class="card pattern-generator" style="width: 42rem">
-        <img
-          src="file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/patterngeneratorpic.png"
-          class="card-img-top"
-          alt="knitting supplies"
-        />
-        <div class="card-body">
-          <h5 class="card-title" id="pattern-generator">
-            Pattern Generator
-          </h5>
-          <p class="card-text">
-  <form class="scarfForm">        
-      <ul>
-      <li> What do you want to knit? </li>
-        <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-  </div>
-  <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value="1">Scarf</option>
-    <option value="2">Coming Soon: Hat</option>
-    <option value="3">Coming Soon: Mittens</option>
-  </select>
-</div>
-        <li>Approximately how many yards of yarn do you have?</li>
-        <input class="form-control" type="text" placeholder="Type a number here..." id="yardage">
-        <li>
-          On your gauge swatch, how many stitches do you count
-          <strong> horizontally </strong> in one inch?
-        </li>
-       <input class="form-control" type="text" placeholder="Type a number here..." id="gauge">
+        <div class="card pattern-generator" style="width: 42rem">
+          <img
+            src="file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/patterngeneratorpic.png"
+            class="card-img-top"
+            alt="knitting supplies"
+          />
+          <div class="card-body">
+            <br />
+            <h5 class="card-title" id="pattern-generator">Pattern Generator</h5>
 
-      </ul>
-      <input type="Submit" class="submit">
-      </form>
-          </p>
+            <form id="scarf-form" autocomplete="off">
+              <br />
+              <h5>Optional: enter your name.</h5>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Type your name here..."
+                id="name"
+              />
+              <br />
+              <h5>What do you want to knit?</h5>
+              <div class="form-group">
+                <select class="form-control" id="project-type">
+                  <option>Scarf</option>
+                  <option>Coming Soon: Hat</option>
+                  <option>Coming Soon: Mittens</option>
+                </select>
+              </div>
+              <br />
+              <h5>
+                On your gauge swatch, how many stitches do you count
+                <strong> horizontally </strong> per inch?
+              </h5>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Type a number here..."
+                id="gauge"
+              />
+              <br />
+              <input type="Submit" id="submit" />
+            </form>
+          </div>
         </div>
-        </div>
-        
       </div>
-      
-
       <footer id="coded-by">
         <a
           href="https://github.com/griffique/griffin-she-codes-plus"
@@ -108,6 +109,6 @@
         your project or suggestions!
       </footer>
     </div>
-   <script src="src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

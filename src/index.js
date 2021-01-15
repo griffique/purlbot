@@ -82,49 +82,34 @@ function loadHowTo(event) {
         </div>
       </div>`;
 }
+//Scarf generator
+function handleSubmit(event) {
+  event.preventDefault();
+  let projectInput = document.querySelector("#project-type");
+  let project = projectInput.value;
 
-let patternGenerator = document.querySelector("#pattern-generator");
-patternGenerator.addEventListener("click", loadPatternGenerator);
-function loadPatternGenerator(event) {
-  let displayArea = document.querySelector("#display-area");
-  displayArea.innerHTML = `      <div id="display-area">
- <div class="card pattern-generator" style="width: 42rem">
-        <img
-          src="file:///C:/Users/quinn/Google%20Drive/coding/purlbot/images/patterngeneratorpic.png"
-          class="card-img-top"
-          alt="knitting supplies"
-        />
-        <div class="card-body">
-          <h5 class="card-title" id="pattern-generator">
-            Pattern Generator
-          </h5>
-          <p class="card-text">
-          
-      <ul> <li> What do you want to knit? </li>
-        <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <label class="input-group-text" for="inputGroupSelect01">Options</label>
-  </div>
-  <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-  </select>
-</div>
-        <li>Approximately how many yards of yarn do you have?</li>
-        <li>
-          On your gauge swatch, how many stitches do you count
-          <strong> horizontally </strong> in one inch?
-        </li>
-        <li>
-          On your gauge swatch, how many stitches do you count
-          <strong> vertically </strong> in one inch?
-        </li>
-      </ul>
-          </p>
-        </div>
-        </div>
-        
-      </div>`;
+  let gaugeInput = document.querySelector("#gauge");
+  let gauge = gaugeInput.value;
+  let nameInput = document.querySelector("#name");
+  let name = nameInput.value;
+  let possessiveName = `${name}'s`;
+  if (name.length < 1) {
+    possessiveName = "Your";
+  }
+
+  if (gauge * 0 != 0) {
+    alert("Please enter a number for your gauge.");
+  }
+  let childCastOnStiches = Math.round(gauge * 6);
+  let adultCastOnStiches = Math.round(gauge * 8);
+  if (project === "Scarf") {
+    let displayArea = document.querySelector("#display-area");
+    displayArea.innerHTML = `<div class="pattern-display"><h1 id="scarf-title">${possessiveName} Scarf Pattern</h1><h3>Sizes are given as (child,adult). </h3>  <p>Cast on (${childCastOnStiches},${adultCastOnStiches}) stitches. Knit in your chosen stitch until you measure (48, 60) inches from cast on, or desired length, and bind off in pattern. <a href="https://blog.knitpicks.com/tutorial-blocking-knits/" target="_blank">Block </a>to measurements listed below. </p>
+      <ul> <li> Children's scarf measurement = (6"x48")</li> <li> Adult scarf measurement = (8" x 60")</li></ul> <h4>Suggested Stitches</h4><ul><li><a href="http://freeknitstitches.com/pattern.php?num=106&menu=2" target="_blank">Forked Lightning ⭐ </a></li><li><a href="http://freeknitstitches.com/pattern.php?num=216&menu=1" target="_blank">Twisted Rib ⭐⭐</a></li><li><a href="http://freeknitstitches.com/pattern.php?num=290&menu=4" target="_blank">Sine Wave ⭐⭐⭐</a></li></ul> <ul id="difficulty-ratings"><li>⭐ Easier </li><li>⭐⭐ Intermediate </li><li>⭐⭐⭐ Advanced</li></ul><h5>Not sure if you have enough yarn? Calculate how much you'll need here:</h5><script language="JavaScript" type="text/javascript">function myOpen(url){window.open(url,null,"height=650,width=860,resizable=yes,scrollbars=yes,toolbar=no,menubar=no");}</script><a href="https://www.JimmyBeansWool.com/knittingCalculator" target=_blank><img border=0 width=126 height=102 src="https://www.JimmyBeansWool.com/images/knittingCalculator/knitCalcOtherSites.gif" alt="Knitting Calculator at Jimmy Beans Wool"></a></div>`;
+  } else {
+    alert("Mitten and Hat Functionality Coming Soon! Check back later.");
+  }
 }
+
+let submitForm = document.querySelector("#scarf-form");
+submitForm.addEventListener("submit", handleSubmit);
